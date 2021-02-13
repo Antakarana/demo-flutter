@@ -1,0 +1,19 @@
+{
+    "get_device_id": "Get Device ID",
+    "title_map": "Map",
+    "map": "Map",
+    "qr_code": "QR Code",
+    "failed_to_get_device_id": "Failed to get deviceId.",
+    "title_device_id": "Device ID",
+    "device_id": "Device ID",
+    "distriction_bahcelievler": "District Bahcelievler",
+    "distriction_desc": "Bahcelievler ...",
+    "title_google_map": "Google Map",
+    "city_kocaeli": "Kocaeli",
+    "click_for_bahcelievler_map": "Click to Bahcelievler map",
+    "click_to_direction_for_kocaeli": "Choose an application for Kocaeli directions \nFirst of all, please open the location of the device.",
+    "click_to_open_location": "If you turn off location permission, click it to turn it back on",
+    "title_qr_code": "QR Code",
+    "qr_code_result": "QR Code result: ",
+    "read_qr_code": "Scan a qr code"
+}

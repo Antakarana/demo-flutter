@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:save_my_assets/assets/images/Path.dart';
 import 'package:save_my_assets/views/utils/functions/AppBar.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class GoogleMapScreen extends StatefulWidget {
   @override
@@ -20,7 +20,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
 
   void setCustomMarker() async {
     mapMarker = await BitmapDescriptor.fromAssetImage(
-        ImageConfiguration(), icon_pink_marker);
+        ImageConfiguration(), 'lib/assets/images/pink_marker.png');
   }
 
   void _onMapCreated(GoogleMapController controller) {
@@ -31,7 +31,9 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
             position: LatLng(40.9975, 28.8506),
             icon: mapMarker,
             infoWindow: InfoWindow(
-                title: "Bahcelievler Ilcesi", snippet: "Bahcelievler ...")),
+              title: 'distriction_bahcelievler'.tr(),
+              snippet: 'distriction_desc'.tr(),
+            )),
       );
     });
   }
@@ -39,7 +41,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: getAppBar("Google Harita"),
+      appBar: getAppBar('title_google_map'.tr()),
       body: GoogleMap(
         onMapCreated: _onMapCreated,
         markers: _markers,

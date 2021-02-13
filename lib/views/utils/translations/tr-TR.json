@@ -1,0 +1,19 @@
+{
+    "get_device_id": "Cihaz Id'sini Al",
+    "title_map": "Harita",
+    "map": "Harita",
+    "qr_code": "QR Kod",
+    "failed_to_get_device_id": "Cihaz ID'si alinamadi.",
+    "title_device_id": "Cihaz ID",
+    "device_id": "Cihaz ID",
+    "distriction_bahcelievler": "Bahcelievler Ilcesi",
+    "distriction_desc": "Bahcelievler ...",
+    "title_google_map": "Google Harita",
+    "city_kocaeli": "Kocaeli",
+    "click_for_bahcelievler_map": "Bahcelievler haritasi icin tikla",
+    "click_to_direction_for_kocaeli": "Kocaeli yol tarifi icin uygulama sec \nOncelikle lutfen cihaz konumunu ac",
+    "click_to_open_location": "Konum iznini kapatirsan tekrar acmak icin tikla",
+    "title_qr_code": "QR Kod",
+    "qr_code_result": "Kare kod sonucu: ",
+    "read_qr_code": "Bir kare kod tara"
+}

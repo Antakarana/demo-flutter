@@ -3,7 +3,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:map_launcher/map_launcher.dart';
 import 'package:save_my_assets/views/ui/map/GoogleMap.dart';
 import 'package:save_my_assets/views/utils/functions/AppBar.dart';
-import 'package:save_my_assets/views/utils/functions/TextButton.dart';
+import 'package:save_my_assets/views/utils/widgets/TextButton.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class MapSelection extends StatefulWidget {
   @override
@@ -25,7 +26,7 @@ class _MapSelectionState extends State<MapSelection> {
         40.766666,
         29.916668,
       );
-      final title = "Kocaeli";
+      final title = 'city_kocaeli'.tr();
       final availableMaps = await MapLauncher.installedMaps;
 
       showModalBottomSheet(
@@ -81,12 +82,12 @@ class _MapSelectionState extends State<MapSelection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: getAppBar("Harita"),
+      appBar: getAppBar('title_map'.tr()),
       body: Center(
         child: Column(
           children: [
-            buildTextButton(
-              text: "Bahcelievler haritasi icin tikla",
+            BtnWithText(
+              text: 'click_for_bahcelievler_map'.tr(),
               function: () {
                 Navigator.push(
                   context,
@@ -97,16 +98,15 @@ class _MapSelectionState extends State<MapSelection> {
               },
             ),
             Builder(builder: (context) {
-              return buildTextButton(
-                text:
-                    'Kocaeli yol tarifi icin uygulama sec \nOncelikle lutfen cihaz konumunu ac',
+              return BtnWithText(
+                text: 'click_to_direction_for_kocaeli'.tr(),
                 function: () {
                   openMapsSheet(context);
                 },
               );
             }),
-            buildTextButton(
-              text: "Konum iznini kapatirsan tekrar acmak icin tikla",
+            BtnWithText(
+              text: 'click_to_open_location'.tr(),
               function: () {
                 _getCurrentLocation();
               },

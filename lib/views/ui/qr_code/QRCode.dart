@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:save_my_assets/views/utils/functions/AppBar.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class QRCode extends StatefulWidget {
   QRCode({Key key}) : super(key: key);
@@ -30,7 +31,7 @@ class _QRCodeState extends State<QRCode> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: getAppBar("QR Kod"),
+      appBar: getAppBar('title_qr_code'.tr()),
       body: Column(
         children: [
           Expanded(
@@ -50,8 +51,8 @@ class _QRCodeState extends State<QRCode> {
           Expanded(
             child: Center(
               child: (qrText != null)
-                  ? Text('Kare kod sonucu: ${qrText.code}')
-                  : Text('Bir kare kod tara'),
+                  ? Text("${'qr_code_result'.tr()} + ${qrText.code}")
+                  : Text('read_qr_code'.tr()),
             ),
           )
         ],
