@@ -39,5 +39,15 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+    <key>io.flutter.embedded_views_preview</key>
+    <true/>
+    <key>NSCameraUsageDescription</key>
+    <string>Kamera izni qr kod okuma icin gereklidir.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Konum izni harita yol tarifi icin gereklidir.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Konum izni harita yol tarifi icin gereklidir.</string>
+    <key>NSLocationAlwaysAndUsageDescription</key>
+    <string>Konum izni harita yol tarifi icin gereklidir.</string>
 </dict>
 </plist>
