@@ -15,5 +15,8 @@
     "click_to_open_location": "Konum iznini kapatirsan tekrar acmak icin tikla",
     "title_qr_code": "QR Kod",
     "qr_code_result": "Kare kod sonucu: ",
-    "read_qr_code": "Bir kare kod tara"
+    "read_qr_code": "Bir kare kod tara",
+    "profile": "Profil",
+    "map_selection": "Harita Secimi",
+    "location": "Konum"
 }

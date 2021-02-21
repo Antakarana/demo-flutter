@@ -15,5 +15,8 @@
     "click_to_open_location": "If you turn off location permission, click it to turn it back on",
     "title_qr_code": "QR Code",
     "qr_code_result": "QR Code result: ",
-    "read_qr_code": "Scan a qr code"
+    "read_qr_code": "Scan a qr code",
+    "profile": "Profile",
+    "map_selection": "Map Selection",
+    "location": "Location"
 }
